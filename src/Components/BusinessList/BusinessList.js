@@ -14,3 +14,5 @@ const BusinessList = () => {
         </>
     )
 }
+
+export default BusinessList;
