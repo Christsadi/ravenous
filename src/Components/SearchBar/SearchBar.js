@@ -1,12 +1,19 @@
 import React from "react";
 
-const options = {
+const sortOptions = {
     'Best match': 'best match',
-    'Rating': 'rating',
-    'Review_count': 'review_count'
+    'Highest Rated': 'rating',
+    'Most Reviewed': 'review_count'
 }
 
 const SearchBar = () => {
+    const sortByOption = () => {
+        return Object.keys(sortOptions).map((sort) => {
+            let sortOptionsValue = sortOptions[sort];
+            return <li key={sortOptionsValue}>{sort}</li>;
+        });
+    };
+
     return (
         <>
         <input placeholder="Search Business" />
