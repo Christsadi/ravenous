@@ -1,8 +1,8 @@
 import React from "react";
-
+import product from '../../assets/product.jpg';
 
 const businessState = {
-    image: ,
+    image: product,
     name: `Nela's Menu`,
     address: '1 Gelder close',
     city: 'Cape Town',
@@ -13,7 +13,7 @@ const businessState = {
     reviewCount: 160,
 }
 
-const Business () => {
+const Business = () => {
 
     return (
         <>
